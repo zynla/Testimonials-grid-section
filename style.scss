@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//VARIABLES: 
+    //COLORS: ^
+
+    $white: hsl(0, 0%, 100%);
+    $Purple50: hsl(260, 100%, 95%);
+    $Purple300: hsl(264, 82%, 80%); 
+    $Purple500: hsl(263, 55%, 52%);
+
+    $Grey100: hsl(214, 17%, 92%);
+    $Grey200: hsl(0, 0%, 81%);
+    $Grey400: hsl(224, 10%, 45%);
+    $Grey500: hsl(217, 19%, 35%);
+    $Darkblue: hsl(219, 29%, 14%);
+    $Black: hsl(0, 0%, 7%);
+
+    $card-daniel-color: hsl(263, 55%, 52%);
+    $card-jonathan-color: hsl(217, 19%, 35%);
+    $card-jeanette-color: hsl(0, 0%, 100%);
+    $card-patrick-color: hsl(219, 29%, 14%);
+    $card-kira-color: hsl(0, 0%, 100%);
+
+    //FONTS:
+    $font-family: 'Barlow Semi Condensed', sans-serif;
+    $font-size-text: .8rem;
+    $font-weight500: 500;
+    $font-weight600: 600;
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 auto;
+    padding: 5rem 3rem;
+    background: $Grey100;
+}
+.testimonials{
+    &__cards{
+        font-family: $font-family;
+        display: grid;
+        grid-template-rows: repeat(5, 100%);
+        gap: 2rem;
+        .card{
+            padding: 2rem;
+            border-radius: .5rem;
+            box-shadow: 2.5rem 2.5rem 1.25rem $Grey200;
+            &__profile{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 1.2rem;
+            }
+            &__title{
+                font-size: .9rem;
+                font-weight: $font-weight500;
+            }
+            &__status{
+                font-size: .7rem;
+                font-weight: $font-weight500;
+            }
+            &__identify{
+                display: flex;
+                flex-direction: column;
+                gap: .3rem;
+                font-size: $font-size-text;
+            }
+            
+            &__picture{
+                border-radius: 100%;
+                width: 2.2rem;
+                border: 0.16rem solid $Purple300;
+            }
+            &__caption{
+                font-size: 1.3rem;
+                font-weight: $font-weight600;
+                margin-bottom: 1.2rem;
+            }
+            &__comment{
+                line-height: 1.5;
+                font-size: $font-size-text;
+            }
+
+
+            &--daniel{
+                background-color: $card-daniel-color;
+                color: $Purple50;
+            }
+            &--jonathan{
+                background-color: $card-jonathan-color;
+                color: $Purple50;
+            }
+            &--jeanette{
+                background-color: $card-jeanette-color;
+                color: $Grey500;
+            }
+            &--patrick{
+                background-color: $card-patrick-color;
+                color:$Grey200;
+            }
+            &--kira{
+                background-color: $card-kira-color;
+                color: $Grey500;
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    body{
+        margin: 0 auto;
+        padding: 5rem;
+    }
+    .testimonials{
+        &__cards{
+            font-family: $font-family;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 1.5rem;
+        }
+        .card{
+            &--daniel{
+                background: url(./images/bg-pattern-quotation.svg) no-repeat top right 4rem;
+                grid-column:1/3;
+                grid-row: 1/2;
+            }
+            &--jonathan{
+                grid-column:3/4;
+                grid-row: 1/2;
+            }
+            &--jeanette{
+                grid-column:1/2;
+                grid-row: 2/3;
+            }
+            &--patrick{
+                grid-column: 2/4;
+                grid-row: 2/3;
+            }
+            &--kira{
+                grid-column: 4/5;
+                grid-row: 1/3;
+            }
+        }
+
+    }
+}
