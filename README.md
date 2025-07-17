@@ -38,7 +38,7 @@ Here is a screenshot of the mobile solution:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Vercel.com](https://testimonials-grid-section-three-pearl.vercel.app/)
 
 ## My process
 
@@ -64,6 +64,7 @@ Here is a screenshot of the mobile solution:
 Organized CSS using SCSS features:
 
  - Element Nesting:
+
     ```scss
       .card{
         &__title{
@@ -85,7 +86,6 @@ Organized CSS using SCSS features:
 - Distributed testimonial cards across the grid based on screen size.
 
 ### Useful resources
-
 
 - [ChatGPT (OpenAI)](https://chatgpt.com/) - This helped me understand how different CSS properties work together, especially layout behavior and default styles. I used it as a coding assistant whenever I had a doubt.
 - [Abdelrahman Gamal](https://nouvil.net/) - His tutorials are super beginner-friendly and helped me understand the basics of HTML and CSS. I really appreciated his clear explanations and structured approach to learning front-end development.
