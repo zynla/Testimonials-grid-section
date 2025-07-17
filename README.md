@@ -37,7 +37,7 @@ Here is a screenshot of the mobile solution:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-rJkuwqRRlP)
 - Live Site URL: [Vercel.com](https://testimonials-grid-section-three-pearl.vercel.app/)
 
 ## My process
